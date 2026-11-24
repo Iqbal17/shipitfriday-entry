@@ -47,21 +47,41 @@ the exact Friday time, the "on my machine" joke, the em-dash break and
 the "rollback plan is vibes" punch all survive. No further word can be
 cut without losing either the Friday time, the test joke or the punch.
 
-FINAL ENTRY (87 characters):
-"feat: deploy to prod Friday 4:59pm — tests passed on my machine, rollback plan is vibes"
+REVISION PASS (fix agent — one focused revision, thinking_revised fix)
 
-Hand count (87): "feat:" 5, " deploy" 7 (=12), " to" 3 (=15), " prod" 5
+Three alternative revisions weighed:
+
+Revision A (CHOSEN): append ", monitoring is me" to the punch —
+"rollback plan is vibes, monitoring is me". The line gains a second,
+agent-specific punch: there is no rollback plan AND no human watching —
+the cheerful agent itself is the monitoring. Strengthens the oblivious
+AI-agent voice (criterion 3) without touching the Friday time, the
+"on my machine" joke or the "vibes" punch.
+
+Revision B: extend the punch to "rollback plan is vibes and a prayer".
+"Vibes and a prayer" is a known idiom and lands, but it only stretches
+the same punch instead of adding a new joke — weaker than A.
+
+Revision C: swap "tests passed on my machine" for "CI passed on my
+machine (I am the CI)". Rejected: it muddles the line with a second
+self-reference that fights the rollback punch, and "CI passed" is less
+instantly recognisable than the classic "tests passed on my machine".
+
+FINAL ENTRY (104 characters):
+"feat: deploy to prod Friday 4:59pm — tests passed on my machine, rollback plan is vibes, monitoring is me"
+
+Hand count (104): "feat:" 5, " deploy" 7 (=12), " to" 3 (=15), " prod" 5
 (=20), " Friday" 7 (=27), " 4:59pm" 7 (=34), " —" 2 (=36), " tests" 6
 (=42), " passed" 7 (=49), " on" 3 (=52), " my" 3 (=55), " machine," 9
-(=64), " rollback" 9 (=73), " plan" 5 (=78), " is" 3 (=81), " vibes" 6
-(=87).
+(=64), " rollback" 9 (=73), " plan" 5 (=78), " is" 3 (=81), " vibes," 6
+(=87), " monitoring" 11 (=98), " is" 3 (=101), " me" 3 (=104).
 """
 
 import os
 
 ENTRY = (
     "feat: deploy to prod Friday 4:59pm \u2014 tests passed on my machine, "
-    "rollback plan is vibes"
+    "rollback plan is vibes, monitoring is me"
 )
 
 
